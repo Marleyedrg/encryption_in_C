@@ -33,7 +33,8 @@ This is a repository containing an implementation of a encryption C language bas
     ```bash
     ./encryption_in_C [message]
     ```
-  or
+      or
+
     ```bash
     ./encryption_in_C [message] [int(1 to 26)] [int(1 to 26)] [int(1 to 26)]
     ```
@@ -42,7 +43,7 @@ This is a repository containing an implementation of a encryption C language bas
 
 ## Examples
 
-Here are some basic examples of using the Enigma machine via CLI:
+Here are some basic examples of using the algorithm via CLI:
 
 - Encrypt a message:
     ```bash
