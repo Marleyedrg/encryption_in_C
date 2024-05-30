@@ -26,7 +26,7 @@ int reflector(int letter);
 
 // Main() Function 
 int main(int argc, char *argv[]) {
-    if (argc > 5)
+    if (argc > 5 || argc <= 1)
     {
         return usage(1);
     }
@@ -40,10 +40,10 @@ int main(int argc, char *argv[]) {
                 return usage(1);
             }
             // Assign the value to the corresponding variable using the pointer array
-            *(rotors[i]) = value;
+            *(rotors[i]) = value;  
         }
     }else{
-        printf("[DEFAULT]1 1 1\n");
+        printf("[1 1 1]");
     }
       
     char *phrase = argv[1]; 
