@@ -17,6 +17,8 @@
 char rotor1 = 1;
 char rotor2 = 1;
 char rotor3 = 1;
+// Create an array of pointers that point to variables
+char *rotors[] = {&rotor1, &rotor2, &rotor3};
 
 int usage(int error);
 int rotor(int position,char letter,int counter);
@@ -29,9 +31,8 @@ int main(int argc, char *argv[]) {
         return usage(1);
     }
     if(argc > 2){
-        // Create an array of pointers that point to variables
-        char *rotors[] = {&rotor1, &rotor2, &rotor3};
-
+        // array of pointers that point to variables
+        // char *rotors[] = {&rotor1, &rotor2, &rotor3};
         for (int i = 0, value; i < 3; i++) {
             value = atoi(argv[i + 2]);
             // Check if the value is within the valid range
@@ -77,10 +78,7 @@ int main(int argc, char *argv[]) {
         }
         phrase[i] = reflector(currentLetter);
     }
-    char *str = phrase;
-   
     printf(">> %s\n",phrase);
-
     return 0;
 }
 
