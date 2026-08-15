@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enigma‑style Encryption</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Enigma‑style Encryption</h1>
+    <section class="input-section">
+      <label for="phrase">Message:</label>
+      <input type="text" id="phrase" placeholder="Hello, World!" />
+    </section>
+    <section class="input-section">
+      <label for="password">Password (encryption key):</label>
+      <input type="password" id="password" placeholder="your secret key" />
+    </section>
+    <p class="hint" id="rotorHint"></p>
+    <button id="encryptBtn">Encrypt</button>
+  </main>
+  <script src="enigma.js"></script>
+  <script>
+    document.getElementById('encryptBtn').addEventListener('click', runEncryption);
+    document.getElementById('rotorHint').textContent =
+      ROTOR_SIZE + ' rotors (' + ROTOR_SIZE + ' characters in the alphabet)';
+  </script>
+</body>
+</html>
