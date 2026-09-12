@@ -4,7 +4,7 @@ This repository contains an implementation of an encryption algorithm inspired b
 
 ---
 
-## 🌟 Modern Web Features (JavaScript / TypeScript)
+## Modern Web Features (JavaScript / TypeScript)
 
 - **Dynamic 159-Rotor Cascade System**: Number of rotors automatically matches the character set size ($ROTOR_SIZE = 159$).
 - **Password-Derived Proportional Keys**: Key derivation scales non-linearly according to the password, message length, and character positions.
@@ -14,7 +14,7 @@ This repository contains an implementation of an encryption algorithm inspired b
 
 ---
 
-## 🧠 Como Funciona o Algoritmo (Explicação Didática - Estilo Feynman)
+## Como Funciona o Algoritmo 
 
 ### 1. O Alfabeto (A Roda de 159 Caracteres)
 O sistema define um conjunto de 159 caracteres conhecidos. O número total de rotores é sempre **exatamente igual ao número de caracteres do alfabeto** ($ROTOR_SIZE = 159$).
